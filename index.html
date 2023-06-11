@@ -10,13 +10,16 @@
 </head>
 <body class="bg-[#2B2D33]">
     
+    <!-- nav -->
     <nav class="py-2 shadow-2xl">
         <div class="container mx-auto">
             <div class="sm:flex justify-between items-center space-y-2 sm:space-y-0  text-center">
                 <!-- logo -->
-                <div>
-                    <a href="#" class="text-orange-500 text-xl sm:text-2xl md:text-3xl font-bold">agile<span class="text-slate-100 font-thin">Point</span>.</a>
-                </div>
+                <a href="#" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 justify-center items-center space-x-2">
+                    <img src="img/logo.png" alt="" class=" bg-orange-500 w-8 h-8 sm:w-10 sm:h-10 ring ring-offset-1 ring-offset-[#2b2d33] rounded-full shadow-lg shadow-orange-500/50 animate-bounce">
+
+                    <p class="text-orange-500 text-xl sm:text-2xl md:text-3xl font-bold">agile<span class="text-slate-100 font-thin">Point</span>.</p>
+                </a>
 
                 <!-- nav menu -->
                 <ul class="py-2 sm:py-0 text-sm sm:text-lg font-thin text-slate-100 sm:flex sm:space-x-6 space-y-2 sm:space-y-0 border-t border-slate-700 sm:border-none">
@@ -43,6 +46,40 @@
             </div>
         </div>
     </nav>
+
+
+    <!-- header/hero -->
+    <header>
+        <div class="container mx-auto sm:flex justify-between items-center h-[80vh] px-10 pt-10 sm:pt-0">
+            <div class="basis-1/2 text-slate-100 text-center sm:text-left">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-medium leading-8">
+                    <span class="text-orange-500 font-bold">agile</span><span class="font-thin">Point</span><span class="text-orange-500 font-bold">.</span> <br>programming <span class="text-orange-500 font-thin">just a hobby</span>
+                </h1>
+
+                <p class=" text-slate-400 my-6 w-11/12 mx-auto sm:mx-0">
+                    <b>agile<span class="font-thin">Point</span>.</b> ipsum dolor sit amet consectetur adipisicing elit. Dicta harum dolorum voluptatum deleniti <b>agile<span class="font-thin">Point</span>.</b> quasi aut repellendus. Cum ea maxime minus suscipit ...
+                </p>
+
+                <button 
+                    class="bg-orange-500 py-2 px-5 rounded-full text-sm sm:text-lg md:text-xl ring shadow-xl shadow-orange-500/20 hover:bg-transparent hover:shadow-none hover:ring-1 transition duration-300">
+                    Join : <b>agile<span class="font-thin">Point</span>.</b> Team 
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="2" 
+                    stroke="currentColor" 
+                    class="w-4 h-4 inline-block animate-ping">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="basis-1/2 animate-pulse">
+                <img src="img/hero-img.png" alt="Hero image">
+            </div>
+        </div>
+    </header>
 
 
 </body>
