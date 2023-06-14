@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html" class="dark scroll-smoth transition-colors">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +7,39 @@
     <title>Tailwind project 1</title>
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body class="bg-[#2B2D33]">
-    
+<body class="text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-800">
     <!-- nav -->
-    <nav class="py-2 shadow-2xl">
+    <nav class="bg-gray-200 dark:bg-gray-900 p-2 shadow-2xl sticky top-0 z-50">
         <div class="container mx-auto">
+
             <div class="sm:flex justify-between items-center space-y-2 sm:space-y-0  text-center">
+                
                 <!-- logo -->
                 <a href="#" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 justify-center items-center space-x-2">
                     <img src="img/logo.png" alt="" class=" bg-orange-500 w-8 h-8 sm:w-10 sm:h-10 ring ring-offset-1 ring-offset-[#2b2d33] rounded-full shadow-xl shadow-orange-500/80 animate-bounce">
 
-                    <p class="text-orange-500 text-xl sm:text-2xl md:text-3xl font-bold">agile<span class="text-slate-100 font-thin">Point</span>.</p>
+                    <p class="text-orange-500 text-xl sm:text-2xl md:text-3xl font-extrabold">agile<span class="text-gray-800 dark:text-gray-200 font-normal">Point</span>.</p>
                 </a>
 
+                <!-- theme button -->
+                <div class="mt-4 sm:text-right">
+                    <button id="theme-btn" class="">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" fill="#fff" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.5" 
+                            stroke="currentColor" 
+                            class="w-10 h-10 bg-gray-300 hover:bg-gray-400 dark:bg-gray-800 dark:hover:bg-gray-950 p-2 transition-all duration-200 rounded-full">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                          </svg>
+                    </button>
+                </div>
+
                 <!-- nav menu -->
-                <ul class="py-2 sm:py-0 text-sm sm:text-lg font-thin text-slate-100 sm:flex sm:space-x-6 space-y-2 sm:space-y-0 border-t border-slate-700 sm:border-none">
+                <ul class="py-2 sm:py-0 text-sm sm:text-lg sm:flex sm:space-x-6 space-y-2 sm:space-y-0 border-t border-gray-300 dark:border-gray-800 sm:border-none">
                     <li>
                         <a href="#home" class="text-orange-500 hover:underline underline-offset-4 transition duration-300">Home</a>
                     </li>
@@ -49,22 +66,26 @@
 
 
     <!-- header/hero -->
-    <header class="">
+    <section class="">
         <div class="container mx-auto sm:flex justify-around items-center  px-10 pt-10">
 
+            <div class="basis-1/2 mb-4 sm:mb-0 animate-pulse order-last">
+                <img src="img/abdullah2.png" alt="Hero image" class="w-4/5 mx-auto">
+            </div>
+
             <!-- article -->
-            <div class="basis-1/2 text-slate-100 text-center sm:text-left">
+            <div class="basis-1/2  text-center sm:text-left order-first">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl font-medium leading-8">
-                    <span class="text-orange-500 font-bold">agile</span><span class="font-thin">Point</span><span class="text-orange-500 font-bold">.</span> <br>programming <span class="text-orange-500 font-thin">just a hobby</span>
+                    <span class="text-orange-500 font-extrabold">agile</span><span class="">Point</span><span class="text-orange-500 font-bold">.</span> <br>programming <span class="text-orange-500">just a hobby</span>
                 </h1>
 
-                <p class=" text-slate-400 my-4">
-                    <b>agile<span class="font-thin">Point</span>.</b> ipsum dolor sit amet consectetur adipisicing elit. Dicta harum dolorum voluptatum deleniti <b>agile<span class="font-thin">Point</span>.</b> quasi aut repellendus. Cum ea maxime minus suscipit.
+                <p class=" text-gray-500 dark:text-gray-400 my-4">
+                    <b>agile<span class="font-normal">Point</span>.</b> ipsum dolor sit amet consectetur adipisicing elit. Dicta harum dolorum voluptatum deleniti <b>agile<span class="font-normal">Point</span>.</b> quasi aut repellendus. Cum ea maxime minus suscipit.
                 </p>
 
                 <button class="btn-pink-to-orange group">
                     <span class="btn-pink-to-orange-span">
-                        Join : <b>agile<span class="font-thin">Point</span>.</b> Team 
+                        Join : <b>agile<span class="font-normal">Point</span>.</b> Team 
                         <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         fill="none" 
@@ -77,34 +98,29 @@
                                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
                         </svg>
                     </span>
-                  </button>
-            </div>
-
-            <!-- image -->
-            <div class="basis-1/2 mt-2 sm:mt-0 animate-pulse">
-                <img src="img/abdullah2.png" alt="Hero image" class="w-4/5 mx-auto">
+                </button>
             </div>
         </div>
-    </header>
+    </section>
 
 
     <!-- main -->
     <main class="container mx-auto py-20">
        <!-- service section -->
-        <section class=" text-slate-100">
+        <section class="">
             <!-- service title -->
             <div class="text-center mb-8">
-                <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500">SERVICE</h4>
+                <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500 font-semibold underline decoration-4 underline-offset-8 mb-4">SERVICE</h4>
                 <H2 class="text-2xl sm:text-3xl md:text=4xl lg:text-5xl ">Our <span class="text-orange-500 font-bold">Services</span></H2>
             </div>
 
             <!-- service cards -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- card 1 -->
-                <div class="bg-gray-800 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-800 hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
+                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
                     <img src="img/frontEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
                     <h4 class="text-lg font-semibold">Front End Development</h4>
-                    <p class="text-slate-300 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
                     <button class="btn-purple-to-pink group">
                         <span class="btn-purple-to-pink-span">
@@ -125,10 +141,10 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="bg-gray-800 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-800 hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
+                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
                     <img src="img/backEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
                     <h4 class="text-lg font-semibold">Back End Development</h4>
-                    <p class="text-slate-300 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
                     
                     <button class="btn-purple-to-pink group">
                         <span class="btn-purple-to-pink-span">
@@ -149,10 +165,10 @@
                 </div>
 
                 <!-- card 3 -->
-                <div class="bg-gray-800 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-800 hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
+                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
                     <img src="img/fullStack.png" alt="" class="w-1/2 mx-auto -mb-4">
                     <h4 class="text-lg font-semibold">Full Stack Development</h4>
-                    <p class="text-slate-300 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
                     <button class="btn-purple-to-pink group">
                         <span class="btn-purple-to-pink-span">
@@ -173,10 +189,10 @@
                 </div>
 
                 <!-- card 4 -->
-                <div class="bg-gray-800 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-800 hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
+                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
                     <img src="img/ux-ui-design.png" alt="" class="w-1/2 mx-auto -mb-4">
                     <h4 class="text-lg font-semibold">UX/UI design</h4>
-                    <p class="text-slate-300 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
                     <button class="btn-purple-to-pink group">
                         <span class="btn-purple-to-pink-span">
@@ -197,10 +213,10 @@
                 </div>
 
                 <!-- card 5 -->
-                <div class="bg-gray-800 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-800 hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
+                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
                     <img src="img/graphic-design.png" alt="" class="w-1/2 mx-auto -mb-4">
                     <h4 class="text-lg font-semibold">Graphic Design</h4>
-                    <p class="text-slate-300 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
                     <button class="btn-purple-to-pink group">
                         <span class="btn-purple-to-pink-span">
@@ -221,10 +237,10 @@
                 </div>
 
                 <!-- card 6 -->
-                <div class="bg-gray-800 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-800 hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
+                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
                     <img src="img/marketing.png" alt="" class="w-1/2 mx-auto -mb-4">
                     <h4 class="text-lg font-semibold">Digital Marketing</h4>
-                    <p class="text-slate-300 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
                     <button class="btn-purple-to-pink group">
                         <span class="btn-purple-to-pink-span">
@@ -250,5 +266,7 @@
 
 
 
+    <!-- js -->
+    <script src="js/main.js"></script>
 </body>
 </html>
