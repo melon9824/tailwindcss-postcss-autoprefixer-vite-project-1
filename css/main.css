@@ -8,15 +8,15 @@
 }
 
 .btn-pink-to-orange-span {
-    @apply relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0;
+    @apply relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-100 dark:bg-gray-800 rounded-md group-hover:bg-opacity-0;
 }
 
 .btn-purple-to-pink {
-    @apply relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800;
+    @apply w-full relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800;
 }
 
 .btn-purple-to-pink-span {
-    @apply relative px-5 py-1.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0;
+    @apply w-full relative px-5 py-1.5 transition-all ease-in duration-75 bg-gray-200 dark:bg-gray-700 rounded-full group-hover:bg-opacity-0;
 }
 
 

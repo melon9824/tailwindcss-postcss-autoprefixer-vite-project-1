@@ -52,6 +52,10 @@
                     </li>
 
                     <li>
+                        <a href="#clients" class="hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Clients</a>
+                    </li>
+
+                    <li>
                         <a href="#blogs" class="hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Blogs</a>
                     </li>
 
@@ -97,7 +101,7 @@
                     <span class="text-orange-500 font-bold">agile</span><span class="">Point</span><span class="text-orange-500 font-bold">.</span> <br>programming <span class="text-orange-500">just a hobby</span>
                 </h1>
 
-                <p class=" text-gray-500 dark:text-gray-400 my-4">
+                <p class=" text-gray-500 dark:text-gray-400 my-8">
                     <b>agile<span class="font-normal">Point</span>.</b> ipsum dolor sit amet consectetur adipisicing elit. Dicta harum dolorum voluptatum deleniti <b>agile<span class="font-normal">Point</span>.</b> quasi aut repellendus. Cum ea maxime minus suscipit.
                 </p>
 
@@ -127,155 +131,252 @@
        <!-- service section -->
         <section id="services">
             <!-- service title -->
-            <div class="text-center mb-8">
-                <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500 font-semibold underline decoration-4 underline-offset-8 mb-4">SERVICE</h4>
-                <H2 class="text-2xl sm:text-3xl md:text=4xl lg:text-5xl ">Our <span class="text-orange-500 font-bold">Services</span></H2>
+            <div class="text-center mb-20">
+                <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500/80 font-semibold underline decoration-4 underline-offset-8 mb-8 animate-bounce">SERVICES</h4>
+                <h2 class="text-2xl sm:text-3xl md:text=4xl lg:text-5xl">Our <span class="text-orange-500 font-bold">Services</span></h2>
             </div>
 
             <!-- service cards -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
                 <!-- card 1 -->
-                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
-                    <img src="img/frontEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
-                    <h4 class="text-lg font-semibold">Front End Development</h4>
-                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                    <div>
+                        <img src="img/frontEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
 
-                    <button class="btn-purple-to-pink group">
-                        <span class="btn-purple-to-pink-span">
-                            Details
-                            <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="2" 
-                            stroke="currentColor" 
-                            class="w-4 h-4 inline-block animate-ping">
-                                <path 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
-                            </svg>
-                        </span>
-                    </button>
+                        <h4 class="text-lg font-semibold">Front End Development</h4>
+
+                        <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+
+                        <button class="btn-purple-to-pink group mt-2">
+                            <span class="btn-purple-to-pink-span">
+                                Details
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="2" 
+                                stroke="currentColor" 
+                                class="w-4 h-4 inline-block animate-ping">
+                                    <path 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                     <!-- shadow -->
+                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
                 </div>
 
                 <!-- card 2 -->
-                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
-                    <img src="img/backEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
-                    <h4 class="text-lg font-semibold">Back End Development</h4>
-                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
-                    
-                    <button class="btn-purple-to-pink group">
-                        <span class="btn-purple-to-pink-span">
-                            Details
-                            <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="2" 
-                            stroke="currentColor" 
-                            class="w-4 h-4 inline-block animate-ping">
-                                <path 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
-                            </svg>
-                        </span>
-                    </button>
+                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                    <div>
+                        <img src="img/backEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
+
+                        <h4 class="text-lg font-semibold">Back End Development</h4>
+
+                        <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                        
+                        <button class="btn-purple-to-pink group mt-2">
+                            <span class="btn-purple-to-pink-span">
+                                Details
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="2" 
+                                stroke="currentColor" 
+                                class="w-4 h-4 inline-block animate-ping">
+                                    <path 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                     <!-- shadow -->
+                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
                 </div>
 
                 <!-- card 3 -->
-                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
-                    <img src="img/fullStack.png" alt="" class="w-1/2 mx-auto -mb-4">
-                    <h4 class="text-lg font-semibold">Full Stack Development</h4>
-                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                    <div>
+                        <img src="img/fullStack.png" alt="" class="w-1/2 mx-auto -mb-4">
 
-                    <button class="btn-purple-to-pink group">
-                        <span class="btn-purple-to-pink-span">
-                            Details
-                            <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="2" 
-                            stroke="currentColor" 
-                            class="w-4 h-4 inline-block animate-ping">
-                                <path 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
-                            </svg>
-                        </span>
-                    </button>
+                        <h4 class="text-lg font-semibold">Full Stack Development</h4>
+
+                        <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+
+                        <button class="btn-purple-to-pink group mt-2">
+                            <span class="btn-purple-to-pink-span">
+                                Details
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="2" 
+                                stroke="currentColor" 
+                                class="w-4 h-4 inline-block animate-ping">
+                                    <path 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                     <!-- shadow -->
+                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
                 </div>
 
                 <!-- card 4 -->
-                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
-                    <img src="img/ux-ui-design.png" alt="" class="w-1/2 mx-auto -mb-4">
-                    <h4 class="text-lg font-semibold">UX/UI design</h4>
-                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                    <div>
+                        <img src="img/ux-ui-design.png" alt="" class="w-1/2 mx-auto -mb-4">
 
-                    <button class="btn-purple-to-pink group">
-                        <span class="btn-purple-to-pink-span">
-                            Details
-                            <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="2" 
-                            stroke="currentColor" 
-                            class="w-4 h-4 inline-block animate-ping">
-                                <path 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
-                            </svg>
-                        </span>
-                    </button>
+                        <h4 class="text-lg font-semibold">UX/UI design</h4>
+
+                        <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+
+                        <button class="btn-purple-to-pink group mt-2">
+                            <span class="btn-purple-to-pink-span">
+                                Details
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="2" 
+                                stroke="currentColor" 
+                                class="w-4 h-4 inline-block animate-ping">
+                                    <path 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                     <!-- shadow -->
+                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
                 </div>
 
                 <!-- card 5 -->
-                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
-                    <img src="img/graphic-design.png" alt="" class="w-1/2 mx-auto -mb-4">
-                    <h4 class="text-lg font-semibold">Graphic Design</h4>
-                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                    <div>
+                        <img src="img/graphic-design.png" alt="" class="w-1/2 mx-auto -mb-4">
 
-                    <button class="btn-purple-to-pink group">
-                        <span class="btn-purple-to-pink-span">
-                            Details
-                            <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="2" 
-                            stroke="currentColor" 
-                            class="w-4 h-4 inline-block animate-ping">
-                                <path 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
-                            </svg>
-                        </span>
-                    </button>
+                        <h4 class="text-lg font-semibold">Graphic Design</h4>
+
+                        <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+
+                        <button class="btn-purple-to-pink group mt-2">
+                            <span class="btn-purple-to-pink-span">
+                                Details
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="2" 
+                                stroke="currentColor" 
+                                class="w-4 h-4 inline-block animate-ping">
+                                    <path 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                     <!-- shadow -->
+                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
                 </div>
 
                 <!-- card 6 -->
-                <div class="bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full  border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 rounded-lg cursor-pointer transition duration-300">
-                    <img src="img/marketing.png" alt="" class="w-1/2 mx-auto -mb-4">
-                    <h4 class="text-lg font-semibold">Digital Marketing</h4>
-                    <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                    <div>
+                        <img src="img/marketing.png" alt="" class="w-1/2 mx-auto -mb-4">
 
-                    <button class="btn-purple-to-pink group">
-                        <span class="btn-purple-to-pink-span">
-                            Details
-                            <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="2" 
-                            stroke="currentColor" 
-                            class="w-4 h-4 inline-block animate-ping">
-                                <path 
-                                    stroke-linecap="round" stroke-linejoin="round" 
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
-                            </svg>
-                        </span>
-                    </button>
+                        <h4 class="text-lg font-semibold">Digital Marketing</h4>
+
+                        <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
+
+                        <button class="btn-purple-to-pink group mt-2">
+                            <span class="btn-purple-to-pink-span">
+                                Details
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="2" 
+                                stroke="currentColor" 
+                                class="w-4 h-4 inline-block animate-ping">
+                                    <path 
+                                        stroke-linecap="round" stroke-linejoin="round" 
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- shadow -->
+                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- clients section -->
+        <section id="clients ">
+            <div class="container py-20 mt-10 md:flex justify-evenly items-center gap-x--5 sm:gap-x-8 md:gap-x-12">
+                <!-- title -->
+                <div class="text-center mb-10 md:mb-0">
+                    <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500/80 font-semibold underline decoration-4 underline-offset-8 mb-8 animate-bounce">CLIENTS</h4>
+
+                    <h2 class="text-xl sm:text-2xl md:text=3xl lg:text-4xl">Our <span class="underline decoration-1 underline-offset-4 decoration-wavy decoration-orange-500 ">take care</span> of <br> more than <span class="text-orange-500 font-bold">500K</span> <span class="text-orange-500">Customers</span></h2>
+                </div>
+
+                <!-- logoes -->
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8 md:gap-12">
+                    <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
+                        <img src="img/client-01.png" alt="">
+                        <h3 class="text-center font-semibold">One Plus</h3>
+                    </div>
+
+                    <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
+                        <img src="img/client-02.png" alt="">
+                        <h3 class="text-center font-semibold">Tencent</h3>
+                    </div>
+
+                    <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
+                        <img src="img/client-03.png" alt="">
+                        <h3 class="text-center font-semibold">Apple</h3>
+                    </div>
+
+                    <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
+                        <img src="img/client-04.png" alt="">
+                        <h3 class="text-center font-semibold">Microsoft</h3>
+                    </div>
+
+                    <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
+                        <img src="img/client-05.png" alt="">
+                        <h3 class="text-center font-semibold">Lenovo</h3>
+                    </div>
+
+                    <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
+                        <img src="img/client-06.png" alt="">
+                        <h3 class="text-center font-semibold">Huawei</h3>
+                    </div>
+
+                    <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
+                        <img src="img/client-07.png" alt="">
+                        <h3 class="text-center font-semibold">Nexus</h3>
+                    </div>
+
+                    <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
+                        <img src="img/client-08.png" alt="">
+                        <h3 class="text-center font-semibold">Tesla</h3>
+                    </div>
+
+                    <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
+                        <img src="img/client-09.png" alt="">
+                        <h3 class="text-center font-semibold">Brave</h3>
+                    </div>
                 </div>
             </div>
         </section>
