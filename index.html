@@ -12,7 +12,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body class="text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-800">
+<body class="text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-800">
     <!-- nav -->
     <nav class="bg-gray-200 dark:bg-gray-900 p-2 shadow-2xl sticky top-0 z-50">
 
@@ -44,27 +44,27 @@
                 <!-- nav menus -->
                 <ul class="pt-2 pb-4 sm:py-0 text-sm sm:text-lg sm:flex items-center sm:space-x-6 space-y-4 sm:space-y-0 border-t border-gray-300 dark:border-gray-800 sm:border-none">
                     <li>
-                        <a href="#home" class="hover:underline decoration-2 underline-offset-4 transition duration-300">Home</a>
+                        <a href="#home" class="text-sm hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Home</a>
                     </li>
 
                     <li>
-                        <a href="#services" class="hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Services</a>
+                        <a href="#services" class="text-sm hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Services</a>
                     </li>
 
                     <li>
-                        <a href="#clients" class="hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Clients</a>
+                        <a href="#clients" class="text-sm hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Clients</a>
                     </li>
 
                     <li>
-                        <a href="#blogs" class="hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Blogs</a>
+                        <a href="#blogs" class="text-sm hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Blogs</a>
                     </li>
 
                     <li>
-                        <a href="#portfolio" class="hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Portfolio</a>
+                        <a href="#portfolio" class="text-sm hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Portfolio</a>
                     </li>
 
                     <li>
-                        <a href="#contact" class="hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Contact</a>
+                        <a href="#contact" class="text-sm hover:text-orange-500 hover:underline decoration-2 underline-offset-4 transition duration-300">Contact</a>
                     </li>
 
                     <!-- theme button for large devices -->
@@ -133,13 +133,14 @@
             <!-- service title -->
             <div class="text-center mb-20">
                 <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500/80 font-semibold underline decoration-4 underline-offset-8 mb-8 animate-bounce">SERVICES</h4>
+
                 <h2 class="text-2xl sm:text-3xl md:text=4xl lg:text-5xl">Our <span class="text-orange-500 font-bold">Services</span></h2>
             </div>
 
             <!-- service cards -->
             <div class="px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
                 <!-- card 1 -->
-                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                <div class="services-card">
                     <div>
                         <img src="img/frontEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
 
@@ -147,8 +148,8 @@
 
                         <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
-                        <button class="btn-purple-to-pink group mt-2">
-                            <span class="btn-purple-to-pink-span">
+                        <button class="btn-purple-to-pink group w-48 mt-2">
+                            <span class="btn-purple-to-pink-span w-48">
                                 Details
                                 <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -165,11 +166,11 @@
                         </button>
                     </div>
                      <!-- shadow -->
-                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
+                    <div class="services-card-shadow"></div>
                 </div>
 
                 <!-- card 2 -->
-                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                <div class="services-card">
                     <div>
                         <img src="img/backEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
 
@@ -177,8 +178,8 @@
 
                         <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
                         
-                        <button class="btn-purple-to-pink group mt-2">
-                            <span class="btn-purple-to-pink-span">
+                        <button class="btn-purple-to-pink group w-48 mt-2">
+                            <span class="btn-purple-to-pink-span w-48">
                                 Details
                                 <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -195,11 +196,11 @@
                         </button>
                     </div>
                      <!-- shadow -->
-                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
+                    <div class="services-card-shadow"></div>
                 </div>
 
                 <!-- card 3 -->
-                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                <div class="services-card">
                     <div>
                         <img src="img/fullStack.png" alt="" class="w-1/2 mx-auto -mb-4">
 
@@ -207,8 +208,8 @@
 
                         <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
-                        <button class="btn-purple-to-pink group mt-2">
-                            <span class="btn-purple-to-pink-span">
+                        <button class="btn-purple-to-pink group w-48 mt-2">
+                            <span class="btn-purple-to-pink-span w-48">
                                 Details
                                 <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -225,11 +226,11 @@
                         </button>
                     </div>
                      <!-- shadow -->
-                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
+                    <div class="services-card-shadow"></div>
                 </div>
 
                 <!-- card 4 -->
-                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                <div class="services-card">
                     <div>
                         <img src="img/ux-ui-design.png" alt="" class="w-1/2 mx-auto -mb-4">
 
@@ -237,8 +238,8 @@
 
                         <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
-                        <button class="btn-purple-to-pink group mt-2">
-                            <span class="btn-purple-to-pink-span">
+                        <button class="btn-purple-to-pink group w-48 mt-2">
+                            <span class="btn-purple-to-pink-span w-48">
                                 Details
                                 <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -255,11 +256,11 @@
                         </button>
                     </div>
                      <!-- shadow -->
-                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
+                    <div class="services-card-shadow"></div>
                 </div>
 
                 <!-- card 5 -->
-                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                <div class="services-card">
                     <div>
                         <img src="img/graphic-design.png" alt="" class="w-1/2 mx-auto -mb-4">
 
@@ -267,8 +268,8 @@
 
                         <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
-                        <button class="btn-purple-to-pink group mt-2">
-                            <span class="btn-purple-to-pink-span">
+                        <button class="btn-purple-to-pink group w-48 mt-2">
+                            <span class="btn-purple-to-pink-span w-48">
                                 Details
                                 <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -285,11 +286,11 @@
                         </button>
                     </div>
                      <!-- shadow -->
-                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
+                    <div class="services-card-shadow"></div>
                 </div>
 
                 <!-- card 6 -->
-                <div class="relative bg-gray-200 dark:bg-gray-700 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full border-8 border-orange-500/10 hover:border-orange-500/20 rounded-t-full cursor-pointer transition duration-300">
+                <div class="services-card">
                     <div>
                         <img src="img/marketing.png" alt="" class="w-1/2 mx-auto -mb-4">
 
@@ -297,8 +298,8 @@
 
                         <p class="text-gray-500 dark:text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum corporis ex!</p>
 
-                        <button class="btn-purple-to-pink group mt-2">
-                            <span class="btn-purple-to-pink-span">
+                        <button class="btn-purple-to-pink group w-48 mt-2">
+                            <span class="btn-purple-to-pink-span w-48">
                                 Details
                                 <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -315,7 +316,7 @@
                         </button>
                     </div>
                     <!-- shadow -->
-                    <div class="absolute w-11/12 h-8 bg-orange-500/40 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10"></div>
+                    <div class="services-card-shadow"></div>
                 </div>
             </div>
         </section>
@@ -378,6 +379,86 @@
                         <h3 class="text-center font-semibold">Brave</h3>
                     </div>
                 </div>
+            </div>
+        </section>
+
+         <!--=== contact section ===-->
+         <section id="contact">
+            <div class="container py-10">
+                <div class="text-center mb-10 md:mb-16">
+                    <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500/80 font-semibold underline decoration-4 underline-offset-8 mb-8 animate-bounce">CONTACT</h4>
+
+                    <h2 class="text-2xl sm:text-3xl md:text=4xl lg:text-5xl">Get In <span class="text-orange-500 font-bold">Touch</span></h2>
+                </div>
+
+                <form action="">
+                    <div class="w-full m-auto  md:w-2/3">
+                        <div class="text-color-primary-dark grid gap-4 mb-4 md:grid-cols-2">
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                                <label for="name" class="font-semibold">Name</label>
+                                <input type="text" id="name" class="form-input placeholder:text-gray-400" placeholder="Your name" required>
+                            </div>
+
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                                <label for="subject" class="font-semibold">Subject</label>
+                                <input type="text" id="subject" class="form-input placeholder:text-gray-400" placeholder="Subject" required>
+                            </div>
+
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                                <label for="email" class="font-semibold">Email</label>
+                                <input type="email" id="email" class="form-input placeholder:text-gray-400" placeholder="info@yourdomain.com" required>
+                            </div>
+
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                                <label for="tel" class="font-semibold">Phone</label>
+                                <input type="number" id="tel" class="form-input placeholder:text-gray-400" placeholder="+880-1234-567-890">
+                            </div>
+
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                                <label for="company" class="font-semibold">Company</label>
+                                <input type="text" id="company" class="form-input placeholder:text-gray-400" placeholder="Company name">
+                            </div>
+
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                                <label for="country" class="font-semibold">Country</label>
+                                <select name="country" id="country" class="form-input" required>
+                                    <option selected>Select country</option>
+                                    <option value="bd">Bangladesh</option>
+                                    <option value="usa">United States</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="aus">Australia</option>
+                                    <option value="can">Canada</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                            <label for="message" class="font-semibold">Message</label>
+                            <textarea name="message" id="message" cols="" rows="4" class="form-input resize-none placeholder:text-gray-400 " placeholder="Your message"></textarea>
+                        </div>
+
+                        <div class="mt-6 text-center">
+                            <button type="reset" class="w-28 text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-md text-lg px-5 py-2.5 text-center mr-2 mb-2">
+                                Reset
+                            </button>
+    
+                            <button type="submit" class="w-28 text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-orange-800 shadow-lg shadow-orange-500/50 dark:shadow-lg dark:shadow-orange-800/80 font-medium rounded-md text-lg px-5 py-2.5 text-center mr-2 mb-2">
+                                Green
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none" 
+                                    viewBox="0 0 24 24" 
+                                    stroke-width="2" 
+                                    stroke="currentColor" 
+                                    class="w-4 h-4 inline-block animate-ping">
+                                        <path 
+                                            stroke-linecap="round" stroke-linejoin="round" 
+                                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
