@@ -31,7 +31,7 @@
 }
 
 .form-input {
-    @apply text-gray-800 dark:text-gray-50 bg-transparent ring-1 border border-gray-50 dark:border-gray-800 text-sm rounded-sm block p-3 focus:outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50;
+    @apply text-gray-800 dark:text-gray-50 bg-transparent ring-1 border border-gray-50 dark:border-gray-800 text-sm rounded-sm block p-3 focus:outline-none focus:bg-blue-500/10;
 }
 
 
