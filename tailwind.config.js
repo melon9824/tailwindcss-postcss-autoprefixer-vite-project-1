@@ -14,6 +14,7 @@ const rotateY = plugin(function ({addUtilities}) {
 
 
 module.exports = {
+  mode: "jit",
   darkMode: "class",
   content: ["*"],
   theme: {

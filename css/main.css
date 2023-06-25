@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .nav-link {
-    @apply text-sm underline decoration-gray-700 hover:text-orange-500 hover:decoration-orange-500 hover:underline decoration-2 underline-offset-8 transition duration-300;
+    @apply text-sm hover:text-orange-500 hover:decoration-orange-500 hover:underline decoration-2 underline-offset-8 transition duration-300;
 }
 
 
@@ -27,7 +27,7 @@
     @apply relative bg-gray-50 dark:bg-gray-800 text-center px-4 pb-2 w-11/12 mx-auto sm:w-full hover:ring-1 hover:scale-105 hover:ring-orange-500/30 dark:hover:ring-orange-500/30 rounded-t-full cursor-pointer transition-all duration-300;
 }
 .card-shadow {
-    @apply absolute w-full h-8 bg-orange-500/30 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl -z-10;
+    @apply absolute w-full h-8 bg-orange-500/30 -bottom-3 left-0 right-0 my-0 mx-auto blur-xl overflow-hidden -z-10;
 }
 
 

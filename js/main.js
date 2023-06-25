@@ -1,4 +1,27 @@
 /**
+ * ! mobile menu ===
+ */
+const menuBtn = document.querySelector('#menu-btn');
+const navLists = document.querySelector('#nav-lists');
+const faIcon = document.querySelector('.fas');
+const hLink = document.querySelectorAll('#hLink');
+
+menuBtn.addEventListener('click', () => {
+    navLists.classList.toggle('opacity-0');
+    faIcon.classList.toggle('fa-times');
+})
+
+// ! hidden menu on click link
+hLink.forEach(link => {
+    link.addEventListener('click', () => {
+        menuBtn.classList.toggle('opacity-0');
+        faIcon.classList.toggle('fa-times');
+    })
+})
+
+
+
+/**
  * ! light / dark theme ===
  */
 const html = document.getElementById("html");

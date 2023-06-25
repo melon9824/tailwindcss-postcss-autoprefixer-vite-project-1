@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="html" class="dark scroll-smoth transition-colors">
+<html lang="en" id="html" class="dark scroll-smoth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,89 +13,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body class="text-gray-800 dark:text-gray-200 bg-gray-50 dark:bg-gray-800">
-    <!-- nav -->
-    <nav class="bg-gray-200 dark:bg-gray-900 p-2 shadow-2xl sticky top-0 z-50">
+    
+    <!-- navbar -->
+    <nav class="w-full bg-gray-200 dark:bg-gray-900 py-2 shadow-2xl sticky top-0 z-50">
 
-        <div class="container mx-auto">
+        <div class="px-[5%] md:flex justify-between items-center gap-x-0 md:gap-x-2 gap-y-2 md:gap-y-0 text-center">
 
-            <div class="sm:flex justify-between items-center gap-y-2 sm:gap-y-0  text-center">
+            <div class="flex justify-between items-center">
 
-                <!-- theme button for small devices -->
-                <div class="block sm:hidden -mb-3">
-                    <button id="theme-btn-1" class="">
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" fill="#fff" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.5" 
-                            stroke="currentColor" 
-                            class="w-10 h-10 bg-gray-300 hover:bg-gray-400 dark:bg-gray-800 dark:hover:bg-gray-950 p-2 transition-all duration-200 rounded-full">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                          </svg>
-                    </button>
+                <div class="flex items-center justify-center gap-x-6">
+                    <!-- nav menu toggle mtn -->
+                    <div id="menu-btn" class="md:hidden cursor-pointer">
+                        <i class="fas fa-bars"></i>
+                    </div>
+
+                    <!-- logo -->
+                    <a href="#" class="flex items-center gap-x-1 justify-center">
+                        <i class="ri-team-line ri-xl"></i>
+                        
+                        <p class="text-orange-500 text-lg font-bold">agile<span class="text-gray-800 dark:text-gray-200 font-normal">Point</span>.</p>
+                    </a>
                 </div>
-                
-                <!-- logo -->
-                <a href="#" class="flex items-center gap-x-1 justify-center">
-                    <i class="ri-team-line ri-xl"></i>
-                    
-                    <p class="text-orange-500 text-lg font-bold">agile<span class="text-gray-800 dark:text-gray-200 font-normal">Point</span>.</p>
-                </a>
 
-                <hr class="sm:hidden border-b border-gray-700 my-2">
-
-                <!-- nav menus -->
-                <ul class="pt-2 pb-4 sm:py-0 text-sm sm:text-lg grid grid-cols-4 gap-y-4 sm:gap-y-0 sm:flex items-center sm:gap-x-4 dark:border-gray-800 sm:border-none">
-                    <li>
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#services" class="nav-link">Services</a>
-                    </li>
-
-                    <li>
-                        <a href="#clients" class="nav-link">Clients</a>
-                    </li>
-
-                    <li>
-                        <a href="#pricing" class="nav-link">Pricing</a>
-                    </li>
-
-                    <li>
-                        <a href="#blogs" class="nav-link">Blogs</a>
-                    </li>
-
-                    <li>
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-
-                    <!-- theme button for large devices -->
-                    <li class="hidden sm:block">
-                        <button id="theme-btn-2" class="">
-                            <svg 
-                                xmlns="http://www.w3.org/2000/svg" fill="#fff" 
-                                viewBox="0 0 24 24" 
-                                stroke-width="1.5" 
-                                stroke="currentColor" 
-                                class="w-10 h-10 bg-gray-300 hover:bg-gray-400 dark:bg-gray-800 dark:hover:bg-gray-950 p-2 transition-all duration-200 rounded-full">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
+                <!-- theme btn -->
+                <button id="theme-btn-1" class="md:hidden ">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" fill="#fff" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        class="w-10 h-10 bg-gray-300 hover:bg-gray-400 dark:bg-gray-800 dark:hover:bg-gray-950 p-2 transition-all duration-200 rounded-full">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- nav menus -->
+            <ul id="nav-lists" class="opacity-0 md:opacity-100 w-40 md:w-full absolute top-14 md:relative md:top-0 bg-gray-900 md:bg-transparent p-4 md:justify-end md:py-0 text-sm md:text-lg flex-col md:flex-row flex items-start gap-x-4 gap-y-4 dark:border-gray-800">
+                <li class="">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li>
+                    <a href="#clients" class="nav-link">Clients</a>
+                </li>
+               <li>
+                <a href="#pricing" class="nav-link">Pricing</a>
+               </li>
+                <li>
+                    <a href="#blogs" class="nav-link">Blogs</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- theme button for large devices -->
+            <div class="hidden md:block">
+                <button id="theme-btn-2" class="">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" fill="#fff" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        class="w-10 h-10 bg-gray-300 hover:bg-gray-400 dark:bg-gray-800 dark:hover:bg-gray-950 p-2 transition-all duration-200 rounded-full">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
 
 
     <!-- header/hero -->
-    <section id="home">
-        <div class="container mx-auto sm:flex justify-around items-center  px-10 pt-10">
+    <section id="home" class="relative">
 
+        <!-- blob 1 -->
+        <div class="w-96 h-96 bg-orange-600/70 absolute top-0 left-0 z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+        <!-- blob 2 -->
+        <div class="w-96 h-96 bg-violet-600/70 absolute -bottom-10 right-0 z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+
+        <div class="container mx-auto sm:flex justify-around items-center  px-10 pt-10">
             <!-- image -->
             <div class="basis-1/2 mb-4 sm:mb-0 animate-pulse order-last bg-[url(/img/hero-img-bg-light.png)] dark:bg-[url(/img/hero-img-bg-dark.png)] bg-no-repeat bg-center bg-cover">
                 <img src="img/abdullah2.png" alt="Hero image" class="w-4/5 mx-auto">
@@ -134,8 +137,14 @@
 
     <!-- main -->
     <main class="container mx-auto py-20">
-       <!-- service section -->
-        <section id="services">
+        <!-- service section -->
+        <section id="services" class="relative">
+
+            <!-- blob 1 -->
+            <div class="w-96 h-96 bg-violet-600/60 absolute -top-20 left-0 -z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+            <!-- blob 2 -->
+            <div class="w-96 h-96 bg-orange-600/60 absolute -bottom-20 right-0 -z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+
             <!-- service title -->
             <div class="text-center mb-20">
                 <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500/80 font-semibold underline decoration-4 underline-offset-8 mb-8 animate-bounce">SERVICES</h4>
@@ -329,8 +338,14 @@
 
 
         <!-- clients section -->
-        <section id="clients ">
-            <div class="container py-20 mt-10 md:flex justify-evenly items-center gap-x--5 sm:gap-x-8 md:gap-x-12">
+        <section id="clients" class="relative">
+
+            <!-- blob 1 -->
+            <div class="w-64 h-64 bg-orange-600/70 absolute top-0 left-0 -z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+            <!-- blob 2 -->
+            <div class="w-64 h-64 bg-violet-600/70 absolute -bottom-10 right-0 -z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+
+            <div class="py-20 mt-10 md:flex justify-evenly items-center gap-x--5 sm:gap-x-8 md:gap-x-12">
                 <!-- title -->
                 <div class="text-center mb-10 md:mb-0">
                     <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500/80 font-semibold underline decoration-4 underline-offset-8 mb-8 animate-bounce">CLIENTS</h4>
@@ -390,8 +405,14 @@
 
 
         <!-- pricing section -->
-        <section id="pricing">
-            <div class="container mx-auto py-20">
+        <section id="pricing" class="relative">
+
+            <!-- blob 1 -->
+            <div class="w-96 h-96 bg-violet-600/70 absolute top-0 left-0 -z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+            <!-- blob 2 -->
+            <div class="w-96 h-96 bg-orange-600/70 absolute -bottom-10 right-0 -z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+
+            <div class="py-20">
                 <!-- title -->
                 <div class="text-center mb-20">
                     <h4 class="font-bold tracking-widest text-orange-500/80 underline decoration-4 underline-offset-8 mb-8 animate-bounce">PRICING</h4>
@@ -411,7 +432,7 @@
                 </div>
 
                 <!-- cards -->
-                <div class="text-gray-50 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="text-gray-50 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                     <!-- card 1 -->
                     <div class="card relative h-auto w-auto">
                         <!-- card 1 front -->
@@ -782,10 +803,15 @@
         </section>
 
 
+        <!-- contact section -->
+        <section id="contact" class="relative">
 
-         <!-- contact section -->
-         <section id="contact">
-            <div class="container py-10">
+            <!-- blob 1 -->
+            <div class="w-72 h-64 bg-violet-600/70 absolute top-0 -left-5 z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+            <!-- blob 2 -->
+            <div class="w-72 h-64 bg-orange-600/70 absolute bottom-10 right-0 z-10 blur-3xl opacity-20 overflow-hidden rounded-full"></div>
+
+            <div class="py-10">
                 <!-- contact title -->
                 <div class="text-center mb-10 md:mb-16">
                     <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500/80 font-semibold underline decoration-4 underline-offset-8 mb-8 animate-bounce">CONTACT</h4>
@@ -795,8 +821,8 @@
 
                 <!-- contact form -->
                 <form action="">
-                    <div class="w-full md:w-2/3 mx-auto">
-                        <div class="text-color-primary-dark grid gap-4 mb-4 md:grid-cols-2">
+                    <div class="w-full md:w-3/4 mx-auto">
+                        <div class="w-11/12 md:w-full text-color-primary-dark grid gap-4 mb-4 md:grid-cols-2">
                             <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
                                 <label for="name" class="font-semibold">Name</label>
                                 <input type="text" id="name" class="form-input" placeholder="Your name" required>
@@ -838,7 +864,7 @@
                         <div class="w-11/12 md:w-full mx-auto  ">
                             <label for="msg" class="font-semibold">Message</label>
             
-                            <textarea id="msg" class="w-full mt-1 text-gray-50 bg-transparent rounded-sm border-2 border-b border-orange-500/20 resize-none outline-none focus:border-none focus:ring-1 ring-orange-500/50 focus:px-4 focus:pt-2 focus:pb-8 focus:bg-orange-500/10 caret-blue-500 h-0 focus:h-fit placeholder:text-gray-400 transition-all duration-500" placeholder="Type Your Message"></textarea>
+                            <textarea id="msg" class="w-full mt-1 text-gray-50 bg-transparent rounded-sm border-b border-orange-500/20 resize-none outline-none focus:border-none focus:ring-1 ring-orange-500/50 px-4 focus:pt-2 focus:pb-8 focus:bg-orange-500/10 caret-blue-500 h-0 hover:h-fit focus:h-fit placeholder:text-gray-400 transition-all duration-500" placeholder="Type Your Message"></textarea>
                         </div>
 
                         <!-- contact buttons -->
