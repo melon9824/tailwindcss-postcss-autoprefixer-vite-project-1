@@ -84,3 +84,15 @@ toggleBtn.addEventListener('change', () => {
     card_3_front.classList.toggle('-rotate-y-180');
     card_3_back.classList.toggle('rotate-y-180');
 })
+
+
+/**
+ * ! show scroll up
+ */
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up');
+
+    this.scrollY >= 150 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
+}
+
+window.addEventListener('scroll', scrollUp);
