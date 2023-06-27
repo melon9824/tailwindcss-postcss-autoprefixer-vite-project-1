@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* nav */
 .nav-link {
-    @apply text-base md:text-sm hover:text-orange-500 hover:decoration-orange-500 hover:underline decoration-2 underline-offset-8 transition duration-300;
+    @apply text-base md:text-sm font-semibold md:font-normal tracking-wider hover:text-orange-500 hover:decoration-orange-500 hover:underline decoration-2 underline-offset-8 transition-all duration-500 ease-in-out;
 }
-
 
 /* button */
 .btn-purple-to-pink {
@@ -15,12 +15,10 @@
     @apply relative px-5 py-1.5 transition-all ease-in duration-75 bg-gray-50 dark:bg-gray-800 rounded-full group-hover:bg-opacity-0;
 }
 
-
 /* active link */
 .active {
     @apply text-orange-500;
 }
-
 
 /* seervice section */
 .services-card {
