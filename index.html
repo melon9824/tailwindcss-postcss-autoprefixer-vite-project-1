@@ -9,8 +9,8 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- remixicons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- css for aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -31,7 +31,7 @@
 
                     <!-- logo -->
                     <a href="#" class="flex items-center gap-x-1 justify-center">
-                        <i class="ri-team-line ri-xl"></i>
+                        <i class="fas fa-users text-xl mt-1"></i>
                         
                         <p class="text-orange-500 text-lg font-bold">agile<span class="text-gray-800 dark:text-gray-200 font-normal">Point</span>.</p>
                     </a>
@@ -108,21 +108,32 @@
 
         <div class="container mx-auto sm:flex justify-around items-center  px-10 pt-10">
             <!-- image -->
-            <div class="basis-1/2 mb-4 sm:mb-0 animate-pulse order-last bg-[url(/img/hero-img-bg-light.png)] dark:bg-[url(/img/hero-img-bg-dark.png)] bg-no-repeat bg-center bg-cover">
+            <div class="basis-1/2 mb-4 sm:mb-0 animate-pulse order-last bg-[url(/img/hero-img-bg-light.png)] dark:bg-[url(/img/hero-img-bg-dark.png)] bg-no-repeat bg-center bg-cover" data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000">
                 <img src="img/abdullah2.png" alt="Hero image" class="w-4/5 mx-auto">
             </div>
 
             <!-- article -->
             <div class="basis-1/2  text-center sm:text-left order-first">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-medium leading-8">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-medium leading-8" 
+                data-aos="fade-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <span class="text-orange-500 font-bold">agile</span><span class="">Point</span><span class="text-orange-500 font-bold">.</span> <br>programming <span class="text-orange-500">just a hobby</span>
                 </h1>
 
-                <p class=" text-gray-500 dark:text-gray-400 my-8">
+                <p class=" text-gray-500 dark:text-gray-400 my-8"
+                data-aos="fade-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <b>agile<span class="font-normal">Point</span>.</b> ipsum dolor sit amet consectetur adipisicing elit. Dicta harum dolorum voluptatum deleniti <b>agile<span class="font-normal">Point</span>.</b> quasi aut repellendus. Cum ea maxime minus suscipit.
                 </p>
 
-                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg bg-gradient-to-br from-pink-500 to-orange-400  group group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg bg-gradient-to-br from-pink-500 to-orange-400  group group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
+                data-aos="fade-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2500">
                     <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-100 dark:bg-gray-800 rounded-md group-hover:bg-opacity-0">
                         Join : <b>agile<span class="font-normal">Point</span>.</b> Team 
                         <svg 
@@ -164,7 +175,10 @@
             <div class="px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
                 <!-- card 1 -->
                 <div class="services-card">
-                    <div>
+                    <div
+                    data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">
                         <img src="img/frontEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
 
                         <h4 class="text-lg font-semibold">Front End Development</h4>
@@ -194,7 +208,10 @@
 
                 <!-- card 2 -->
                 <div class="services-card">
-                    <div>
+                    <div 
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="img/backEnd.png" alt="" class="w-1/2 mx-auto -mb-4">
 
                         <h4 class="text-lg font-semibold">Back End Development</h4>
@@ -224,7 +241,10 @@
 
                 <!-- card 3 -->
                 <div class="services-card">
-                    <div>
+                    <div
+                    data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2500">
                         <img src="img/fullStack.png" alt="" class="w-1/2 mx-auto -mb-4">
 
                         <h4 class="text-lg font-semibold">Full Stack Development</h4>
@@ -254,7 +274,10 @@
 
                 <!-- card 4 -->
                 <div class="services-card">
-                    <div>
+                    <div
+                    data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000">
                         <img src="img/ux-ui-design.png" alt="" class="w-1/2 mx-auto -mb-4">
 
                         <h4 class="text-lg font-semibold">UX/UI design</h4>
@@ -284,7 +307,10 @@
 
                 <!-- card 5 -->
                 <div class="services-card">
-                    <div>
+                    <div
+                    data-aos="zoom-out"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2500">
                         <img src="img/graphic-design.png" alt="" class="w-1/2 mx-auto -mb-4">
 
                         <h4 class="text-lg font-semibold">Graphic Design</h4>
@@ -314,7 +340,10 @@
 
                 <!-- card 6 -->
                 <div class="services-card">
-                    <div>
+                    <div
+                    data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="img/marketing.png" alt="" class="w-1/2 mx-auto -mb-4">
 
                         <h4 class="text-lg font-semibold">Digital Marketing</h4>
@@ -358,11 +387,18 @@
                 <div class="text-center mb-10 md:mb-0">
                     <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500/80 font-semibold underline decoration-4 underline-offset-8 mb-8 animate-bounce">CLIENTS</h4>
 
-                    <h2 class="text-xl sm:text-2xl md:text=3xl lg:text-4xl">Our <span class="underline decoration-1 underline-offset-4 decoration-wavy decoration-orange-500 ">take care</span> of <br> more than <span class="text-orange-500 font-bold">500K</span> <span class="text-orange-500">Customers</span></h2>
+                    <h2 class="text-xl sm:text-2xl md:text=3xl lg:text-4xl"
+                    data-aos="fade-down"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">Our <span class="underline decoration-1 underline-offset-4 decoration-wavy decoration-orange-500 ">take care</span> of <br> more than <span class="text-orange-500 font-bold">500K</span> <span class="text-orange-500">Customers</span>
+                    </h2>
                 </div>
 
                 <!-- logoes -->
-                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8 md:gap-12">
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8 md:gap-12"
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2500">
                     <div class="justify-self-center p-3 shadow-xl shadow-orange-500/10">
                         <img src="img/client-01.png" alt="">
                         <h3 class="text-center font-semibold">One Plus</h3>
@@ -442,7 +478,10 @@
                 <!-- cards -->
                 <div class="text-gray-50 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                     <!-- card 1 -->
-                    <div class="card relative h-auto w-auto">
+                    <div class="card relative h-auto w-auto"
+                    data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <!-- card 1 front -->
                         <div id="card_1_front" class="front bg-green-800 px-7 py-6 rounded-2xl h-full w-full">
                             <div class="relative">
@@ -564,7 +603,10 @@
                     </div>
 
                     <!-- card 2 -->
-                    <div class="card relative h-auto w-auto">
+                    <div class="card relative h-auto w-auto"
+                    data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2500">
                         <!-- card 2 front -->
                         <div id="card_2_front" class="front bg-green-800 px-7 py-6 rounded-2xl h-full w-full">
                             <div class="relative">
@@ -686,7 +728,10 @@
                     </div>
 
                     <!-- card 3 -->
-                    <div class="card relative h-auto w-auto">
+                    <div class="card relative h-auto w-auto"
+                    data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000">
                         <!-- card 3 front -->
                         <div id="card_3_front" class="front bg-green-800 px-7 py-6 rounded-2xl h-full w-full">
                             <div class="relative">
@@ -831,7 +876,11 @@
 
             <!-- users -->
             <div class="px-7 py-10 grid grid-cols-1 gap-5 md:px-12 lg:px-20 xl:px-28 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-4">
-                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-1 sm:col-span-2 lg:col-span-3 xl:col-span-2">
+
+                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-1 sm:col-span-2 lg:col-span-3 xl:col-span-2"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <!-- quotation pattern dark-->
                     <img class="absolute hidden dark:block w-32 -top-8 -right-5" src="img/pattern-quotation-dark.png" alt="testimonial quotation">
                     <!-- quotation pattern light-->
@@ -852,7 +901,10 @@
                     <p class="font-normal text-sm">“Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur vel, maiores repellendus facilis distinctio molestiae optio commodi sit magni, laborum, id dolores ipsa. Excepturi quo repellat ratione distinctio tempore corporis placeat doloremque nesciunt perferendis. Perferendis laborum autem assumenda saepe itaque voluptates eveniet, sequi optio nulla. Vel corrupti perspiciatis facilis ab minima nihil eveniet sequi corporis, necessitatibus pariatur, sit repudiandae, voluptatibus distinctio dignissimos ut modi quibusdam voluptate. Repudiandae, sequi aliquid repellendus error officia tempore eaque quisquam? Ipsum qui natus rerum.”</p>
                 </div>
         
-                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-2 lg:col-span-2 xl:col-span-1">
+                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-2 lg:col-span-2 xl:col-span-1"
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2500">
                     <!--user details-->
                     <div class="flex flex-row gap-3 items-center">
                         <img class="rounded-full" src="img/testi1002.jpg" alt="testimonial image">
@@ -868,7 +920,10 @@
                     <p class="font-normal text-sm">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in, perspiciatis exercitationem ad odio aut ullam. Animi mollitia ratione doloremque ea quos est sint nulla excepturi. Perspiciatis odio quidem laborum voluptatibus sit nihil?”</p>
                 </div>
         
-                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-4  sm:col-span-2 md:order-3 md:col-span-1 md:row-span-2 lg:col-span-5 xl:col-span-1 xl:row-span-2">
+                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-4  sm:col-span-2 md:order-3 md:col-span-1 md:row-span-2 lg:col-span-5 xl:col-span-1 xl:row-span-2"
+                data-aos="flip-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <!--user details-->
                     <div class="flex flex-row gap-3 items-center">
                         <img class="rounded-full" src="img/testi1003.jpg" alt="testimonial image">
@@ -884,7 +939,10 @@
                     <p class="font-normal text-sm">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo modi cumque libero eos ratione, magnam aperiam distinctio saepe, sed inventore iusto alias architecto totam consequuntur consectetur illo nam quaerat corrupti! Sint neque consequuntur nisi dignissimos! At cupiditate repellendus placeat enim amet quo sed illum non vel ab repudiandae error deleniti maiores, adipisci atque quae molestias! Perspiciatis neque quae excepturi fugiat distinctio, quo corporis doloribus molestias repudiandae odio qui eius maxime sequi ad. Molestias doloribus rem voluptates, labore eaque ipsa dolor quia porro cupiditate omnis, optio, incidunt facere! Labore, unde quisquam excepturi quo vel a deserunt et laboriosam, inventore sint autem dolore earum numquam! Amet!”</p>
                 </div>
         
-                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-3 lg:order-4 lg:col-span-2 xl:col-span-1">
+                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-3 lg:order-4 lg:col-span-2 xl:col-span-1"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2500">
                     <!--user details-->
                     <div class="flex flex-row gap-3 items-center">
                         <img class="rounded-full" src="img/testi1004.jpg" alt="testimonial image">
@@ -900,7 +958,10 @@
                     <p class="font-normal text-sm">“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, id? Voluptas culpa autem incidunt, dignissimos quae, debitis voluptates ullam at nemo provident dolores! Distinctio, architecto!”</p>
                 </div>
         
-                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-5 sm:col-span-2 lg:col-span-3 xl:col-span-2">
+                <div class="bg-gray-200 dark:bg-gray-900 relative p-6 rounded-md flex flex-col gap-6 sm:order-5 sm:col-span-2 lg:col-span-3 xl:col-span-2"
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000">
                     <!--user details-->
                     <div class="flex flex-row gap-3 items-center">
                         <img class="rounded-full" src="img/testi1005.jpg" alt="testimonial image">
@@ -920,6 +981,92 @@
 
 
         <!-- portfolio section -->
+        <section id="portfolio" class="py-20">
+            <div class="text-center mb-10">
+                <h4 class="text-xs sm:text-sm md:text-base lg:text-lg tracking-widest text-orange-500/80 font-semibold underline decoration-4 underline-offset-8 mb-8 animate-bounce">PORTFOLIO</h4>
+
+                <h2 class="text-2xl sm:text-3xl md:text=4xl lg:text-5xl">Latest <span class="text-orange-500 font-bold">Projects</span></h2>
+            </div>
+
+            <div class="px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+                <!-- project card 1 -->
+                <div class="w-4/5 sm:w-full mx-auto bg-gray-200 dark:bg-gray-900 rounded-t-xl shadow-xl shadow-orange-500/10"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <div class="h-60 bg-[url('../img/proj1.jpg')] bg-no-repeat bg-center bg-cover rounded-t-xl"></div>
+
+                    <div class="px-6 pb-4">
+                        <h5 class="font-bold text-sm sm:text-base md:text-lg lg:text-xl my-2">Social Media App</h5>
+                        <p class="text-sm sm:text-sm md:text-base lg:text-lg leading-4 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae excepturi corporis animi veritatis soluta velit quibusdam quo a tenetur sed.</p>
+                        <div>
+                            <a href="#">
+                                <i class="fab fa-github text-xl"></i>
+                                <span class="text-gray-500 dark:text-gray-400 font-semibold underline underline-offset-2 ml-1 hover:no-underline">Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project card 2 -->
+                <div class="w-4/5 sm:w-full mx-auto bg-gray-200 dark:bg-gray-900 rounded-t-xl shadow-xl shadow-orange-500/10"
+                data-aos="flip-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2500">
+                    <div class="w-full h-60 bg-[url('../img/proj2.jpg')] bg-no-repeat bg-center bg-cover rounded-t-xl"></div>
+
+                    <div class="px-6 pb-4">
+                        <h5 class="font-bold text-sm sm:text-base md:text-lg lg:text-xl my-2">Social Media App</h5>
+                        <p class="text-sm sm:text-sm md:text-base lg:text-lg leading-4 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae excepturi corporis animi veritatis soluta velit quibusdam quo a tenetur sed.</p>
+                        <div>
+                            <a href="#">
+                                <i class="fab fa-github text-xl"></i>
+                                <span class="text-gray-500 dark:text-gray-400 font-semibold underline underline-offset-2 ml-1 hover:no-underline">Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project card 3 -->
+                <div class="w-4/5 sm:w-full mx-auto bg-gray-200 dark:bg-gray-900 rounded-t-xl shadow-xl shadow-orange-500/10"
+                data-aos="flip-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <div class="w-full h-60 bg-[url('../img/proj3.jpg')] bg-no-repeat bg-center bg-cover rounded-t-xl"></div>
+
+                    <div class="px-6 pb-4">
+                        <h5 class="font-bold text-sm sm:text-base md:text-lg lg:text-xl my-2">Social Media App</h5>
+                        <p class="text-sm sm:text-sm md:text-base lg:text-lg leading-4 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae excepturi corporis animi veritatis soluta velit quibusdam quo a tenetur sed.</p>
+                        <div>
+                            <a href="#">
+                                <i class="fab fa-github text-xl"></i>
+                                <span class="text-gray-500 dark:text-gray-400 font-semibold underline underline-offset-2 ml-1 hover:no-underline">Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project card 4 -->
+                <div class="w-4/5 sm:w-full mx-auto bg-gray-200 dark:bg-gray-900 rounded-t-xl shadow-xl shadow-orange-500/10"
+                data-aos="flip-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2500">
+                    <div class="w-full h-60 bg-[url('../img/proj4.jpg')] bg-no-repeat bg-center bg-cover rounded-t-xl"></div>
+
+                    <div class="px-6 pb-4">
+                        <h5 class="font-bold text-sm sm:text-base md:text-lg lg:text-xl my-2">Social Media App</h5>
+                        <p class="text-sm sm:text-sm md:text-base lg:text-lg leading-4 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae excepturi corporis animi veritatis soluta velit quibusdam quo a tenetur sed.</p>
+                        <div>
+                            <a href="#">
+                                <i class="fab fa-github text-xl"></i>
+                                <span class="text-gray-500 dark:text-gray-400 font-semibold underline underline-offset-2 ml-1 hover:no-underline">Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <!-- subscribe section -->
@@ -930,10 +1077,16 @@
             <!-- blob 2 -->
             <div class="w-32 h-32 bg-orange-600/80 absolute bottom-0 right-10 z-10 blur-2xl opacity-20 overflow-hidden rounded-full"></div>
 
-            <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-10 ">
+            <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-10"
+            data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <div class="text-center">
+
+                    <!-- sub title for large evices -->
                     <h4 class="hidden md:block uppercase font-bold tracking-widest text-orange-500/80 underline decoration-4 underline-offset-8 mb-8 animate-pulse">Subscribe</h4>
 
+                    <!-- input box & button -->
                     <div class="md:basis-1/2 flex items-center justify-center md:pl-10 order-2">
                         <input type="email" placeholder="Email" class="h-10 border-none focus:outline-none px-4 rounded-l-full caret-orange-600">
         
@@ -942,9 +1095,14 @@
                 </div>
 
                 <div class="md:basis-1/2 text-center md:text-left">
+
+                    <!-- sub title for small devices -->
                     <h4 class="md:hidden uppercase font-bold tracking-widest text-orange-500/80 underline decoration-4 underline-offset-8 mb-8 animate-pulse">Subscribe</h4>
 
+                    <!-- heading -->
                     <h1 class="text-gray-50 mb-4 text-xl sm:text-2xl md:text-3xl font-light"><span class="text-orange-500 font-bold">Newsletter</span> Subscription</h1>
+
+                    <!-- description -->
                     <p class="text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit perferendis repellendus reiciendis.</p>
                 </div>
             </div>
@@ -971,32 +1129,50 @@
                 <form action="">
                     <div class="w-full md:w-3/4 mx-auto">
                         <div class="w-11/12 md:w-full  grid gap-4 mb-4 md:grid-cols-2">
-                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1"
+                            data-aos="fade-down"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                                 <label for="name" class="font-semibold">Name</label>
                                 <input type="text" id="name" class="form-input" placeholder="Your name" required>
                             </div>
 
-                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1"
+                            data-aos="fade-down"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                                 <label for="subject" class="font-semibold">Subject</label>
                                 <input type="text" id="subject" class="form-input" placeholder="Subject" required>
                             </div>
 
-                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1"
+                            data-aos="fade-down"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2500">
                                 <label for="email" class="font-semibold">Email</label>
                                 <input type="email" id="email" class="form-input" placeholder="info@yourdomain.com" required>
                             </div>
 
-                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1"
+                            data-aos="fade-down"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2500">
                                 <label for="tel" class="font-semibold">Phone</label>
                                 <input type="number" id="tel" class="form-input" placeholder="+880-1234-567-890">
                             </div>
 
-                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1"
+                            data-aos="fade-down"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="3000">
                                 <label for="company" class="font-semibold">Company</label>
                                 <input type="text" id="company" class="form-input" placeholder="Company name">
                             </div>
 
-                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1">
+                            <div class="w-11/12 md:w-full mx-auto flex flex-col space-y-1"
+                            data-aos="fade-down"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="3000">
                                 <label for="country" class="font-semibold">Country</label>
                                 <select name="country" id="country" class="form-input" required>
                                     <option selected class="bg-orange-500">Select Your Country</option>
@@ -1009,7 +1185,10 @@
                             </div>
                         </div>
 
-                        <div class="w-11/12 md:w-full mx-auto  ">
+                        <div class="w-11/12 md:w-full mx-auto"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="3000">
                             <label for="msg" class="font-semibold ">Message</label>
             
                             <textarea id="msg" class="w-11/12 mx-auto md:w-full mt-1 text-gray-50 bg-transparent rounded-sm border-b border-orange-500/20 resize-none outline-none focus:border-none focus:ring-1 ring-orange-500/20 px-4 focus:pt-2 focus:pb-8 focus:bg-orange-500/10 caret-blue-500 h-0 focus:h-fit placeholder:text-gray-400 transition-all duration-500" placeholder="Type Your Message"></textarea>
@@ -1019,7 +1198,7 @@
                         <div class="mt-6 text-center">
                             <button type="reset" class=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-md text-lg px-5 py-2.5 text-center mr-2 mb-2">
                                 Reset
-                                &#11119;
+                                <i class="fas fa-undo rotate-180 animate-spin"></i>
                             </button>
     
                             <button type="submit" class=" text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-orange-800 shadow-lg shadow-orange-500/50 dark:shadow-lg dark:shadow-orange-800/80 font-medium rounded-md text-lg px-5 py-2.5 text-center mr-2 mb-2">
@@ -1056,10 +1235,13 @@
 
                 <div class="text-sm md:grid gap-5 md:grid-cols-2 lg:grid-cols-3 pb-5">
                     <!-- social links -->
-                    <div class="space-y-4">
+                    <div class="space-y-4"
+                    data-aos="fade-down"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <!-- logo -->
                         <a href="#" class="flex items-center gap-x-1 justify-start">
-                            <i class="ri-team-line ri-xl"></i>
+                            <i class="fas fa-users text-xl mt-1"></i>
                             
                             <p class="text-orange-500 text-xl font-bold">agile<span class="text-gray-800 dark:text-gray-200 font-normal">Point</span>.</p>
                         </a>
@@ -1078,7 +1260,10 @@
                     </div>
 
                     <!-- links -->
-                    <div class="text-sm  flex justify-between gap-6 md:gap-2 my-8 md:mt-0">
+                    <div class="text-sm  flex justify-between gap-6 md:gap-2 my-8 md:mt-0"
+                    data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <!-- links 1-->
                         <div class="space-y-4">
                             <h4 class="text-gray-800 dark:text-gray-50 font-semibold text-base">Links</h4>
@@ -1171,7 +1356,10 @@
                     </div>
 
                     <!-- newsletter -->
-                    <div class="md:col-span-3 lg:col-span-1 space-y-4 mt-3 md:mt-0">
+                    <div class="md:col-span-3 lg:col-span-1 space-y-4 mt-3 md:mt-0"
+                    data-aos="fade-up"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="3000">
                         <h4 class="text-gray-800 dark:text-gray-50 font-semibold text-base">Newsletter</h4>
                         <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni at iure
@@ -1198,8 +1386,8 @@
 
 
     <!-- scroll up button-->
-    <a href="#" id="scroll-up" class="text-orange-500 fixed right-4 md:right-6 lg:right-8 -bottom-1/2 bg-gray-300 dark:bg-gray-800 inline-flex items-center gap-1 py-1 pl-2 pr-3 rounded-lg shadow-lg shadow-orange-500/20 hover:-translate-y-2 transition-all duration-400 z-10">
-        <i class="ri-arrow-up-line text-xl"></i>
+    <a href="#" id="scroll-up" class="text-orange-500 fixed right-4 md:right-6 lg:right-8 -bottom-1/2 bg-gray-300 dark:bg-gray-800 inline-flex items-center gap-1 py-1 pl-2 pr-3 rounded-lg shadow-lg shadow-orange-500/20 z-10">
+        <i class="fas fa-arrow-up text-lg animate-bounce"></i>
         <p class="text-sm">Back to Top</p>
     </a>
 
@@ -1207,5 +1395,12 @@
 
     <!-- js -->
     <script src="js/main.js"></script>
+
+    <!-- js for aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- initialize aos -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
