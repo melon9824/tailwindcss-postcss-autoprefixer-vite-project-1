@@ -4,7 +4,8 @@
   "description": "tailwindcss learning project using postcss, autoprefixer, vite",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "vite build"
   },
   "keywords": ["tailwindcss",
                 "postcss",
